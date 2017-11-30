@@ -2,7 +2,7 @@
 #OASAM-LEAK-005: Information Leak to IPC
 
 ##Description:
-It is possible to store information in Intents through theputExtra() y putExtras() functions from the Intent class, as well as through the URI in the parameters by the GET method through the parse() from the URI class. It is not recommended to send unencrypted sensitive data through Implicit Intents since the application that will process such information is unknown a priori.
+It is possible to store information in Intents through the putExtra() and putExtras() functions from the Intent class, as well as through the URI in the parameters by the GET method through the parse() from the URI class. It is not recommended to send unencrypted sensitive data through Implicit Intents since the application that will process such information is unknown a priori.
 
 ##Risks:
 An illegitimate application could get access to sensitive data by intercepting the Intent.
